@@ -82,7 +82,7 @@
 <meta name="description" content="#GitHub pages 先新建一个repository Repository name填GitHub名字.github.io如(weiboboCN.github.io） 选择setting 往下拉找到GitHub Pages 选择choose a theme选择自动生成的主页的样式选择一个主题后提交 至此一个初步的">
 <meta name="keywords" content="hexo,github,先写十篇开个头">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GitHub Pages+Hexo搭建博客">
+<meta property="og:title" content="Linux下GitHub Pages+Hexo搭建博客">
 <meta property="og:url" content="http://yoursite.com/2017/11/29/GitHub-Hexo搭建博客/index.html">
 <meta property="og:site_name" content="魏崇雍的主页">
 <meta property="og:description" content="#GitHub pages 先新建一个repository Repository name填GitHub名字.github.io如(weiboboCN.github.io） 选择setting 往下拉找到GitHub Pages 选择choose a theme选择自动生成的主页的样式选择一个主题后提交 至此一个初步的主页已经形成. 在浏览器输入weiboboCN.github.io即可进入自己最">
@@ -90,9 +90,9 @@
 <meta property="og:image" content="http://yoursite.com/2017/11/29/GitHub-Hexo搭建博客/new_repository.png">
 <meta property="og:image" content="http://yoursite.com/2017/11/29/GitHub-Hexo搭建博客/GitHub_pages_setting.png">
 <meta property="og:image" content="http://yoursite.com/2017/11/29/GitHub-Hexo搭建博客/choose_theme.png">
-<meta property="og:updated_time" content="2017-11-30T02:16:35.244Z">
+<meta property="og:updated_time" content="2017-12-02T10:20:21.248Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GitHub Pages+Hexo搭建博客">
+<meta name="twitter:title" content="Linux下GitHub Pages+Hexo搭建博客">
 <meta name="twitter:description" content="#GitHub pages 先新建一个repository Repository name填GitHub名字.github.io如(weiboboCN.github.io） 选择setting 往下拉找到GitHub Pages 选择choose a theme选择自动生成的主页的样式选择一个主题后提交 至此一个初步的主页已经形成. 在浏览器输入weiboboCN.github.io即可进入自己最">
 <meta name="twitter:image" content="http://yoursite.com/2017/11/29/GitHub-Hexo搭建博客/new_repository.png">
 
@@ -104,7 +104,7 @@
     root: '/',
     scheme: 'Mist',
     version: '5.1.3',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -130,7 +130,7 @@
 
 
 
-  <title>GitHub Pages+Hexo搭建博客 | 魏崇雍的主页</title>
+  <title>Linux下GitHub Pages+Hexo搭建博客 | 魏崇雍的主页</title>
   
 
 
@@ -308,7 +308,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">GitHub Pages+Hexo搭建博客</h1>
+          <h1 class="post-title" itemprop="name headline">Linux下GitHub Pages+Hexo搭建博客</h1>
         
 
         <div class="post-meta">
@@ -424,8 +424,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>使用hexo d -g即可把本地的博客传到GitHub上<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure></p>
 <p>Done!</p>
-<p>：</p>
-<p>：</p>
+<p>Ps:</p>
 <p>hexo的基本使用和主题更换</p>
 <blockquote>
 <p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo的使用文档</a></p>
@@ -533,6 +532,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -563,7 +564,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -574,7 +575,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -585,7 +586,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -820,7 +821,7 @@
         var disqus_config = function () {
           this.page.url = 'http://yoursite.com/2017/11/29/GitHub-Hexo搭建博客/';
           this.page.identifier = '2017/11/29/GitHub-Hexo搭建博客/';
-          this.page.title = 'GitHub Pages+Hexo搭建博客';
+          this.page.title = 'Linux下GitHub Pages+Hexo搭建博客';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://weibobo.disqus.com/embed.js';
