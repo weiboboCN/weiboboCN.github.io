@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="hexo,github,先写十篇开个头," />
+  <meta name="keywords" content="hexo,github," />
 
 
 
@@ -80,7 +80,7 @@
 
 
 <meta name="description" content="#GitHub pages 先新建一个repository Repository name填GitHub名字.github.io如(weiboboCN.github.io） 选择setting 往下拉找到GitHub Pages 选择choose a theme选择自动生成的主页的样式选择一个主题后提交 至此一个初步的">
-<meta name="keywords" content="hexo,github,先写十篇开个头">
+<meta name="keywords" content="hexo,github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux下GitHub Pages+Hexo搭建博客">
 <meta property="og:url" content="http://yoursite.com/2017/11/29/GitHub-Hexo搭建博客/index.html">
@@ -90,7 +90,7 @@
 <meta property="og:image" content="http://yoursite.com/2017/11/29/GitHub-Hexo搭建博客/new_repository.png">
 <meta property="og:image" content="http://yoursite.com/2017/11/29/GitHub-Hexo搭建博客/GitHub_pages_setting.png">
 <meta property="og:image" content="http://yoursite.com/2017/11/29/GitHub-Hexo搭建博客/choose_theme.png">
-<meta property="og:updated_time" content="2017-12-02T10:20:21.248Z">
+<meta property="og:updated_time" content="2017-12-23T10:02:56.193Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux下GitHub Pages+Hexo搭建博客">
 <meta name="twitter:description" content="#GitHub pages 先新建一个repository Repository name填GitHub名字.github.io如(weiboboCN.github.io） 选择setting 往下拉找到GitHub Pages 选择choose a theme选择自动生成的主页的样式选择一个主题后提交 至此一个初步的主页已经形成. 在浏览器输入weiboboCN.github.io即可进入自己最">
@@ -415,11 +415,12 @@
 <p><a href="https://www.cnblogs.com/zhaoyu1995/p/6239950.html" target="_blank" rel="noopener">Linux下使用Hexo搭建github博客</a></p>
 </blockquote>
 <h1 id="本地页面"><a href="#本地页面" class="headerlink" title="本地页面"></a>本地页面</h1><p>在根目录（blog）使用命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
-<p>运行后在浏览器输入地址<br><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br>即可浏览博客</p>
+<p>运行后在浏览器输入地址<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:4000/</span><br></pre></td></tr></table></figure></p>
+<p>即可浏览博客</p>
 <h2 id="把本地调整好的博客传到GitHub上"><a href="#把本地调整好的博客传到GitHub上" class="headerlink" title="把本地调整好的博客传到GitHub上"></a>把本地调整好的博客传到GitHub上</h2><p>修改根目录的<strong>_config.yml</strong>最后面的deploy里面的代码<br>，其中yourname改为你的GitHub的名字（冒号和后面的值之间要有一个空格，很重要如type: git //不能为type:git）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/yourname/yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
 <p>安装hexo-deployer-git使其能发布到GitHub上</p>
 <blockquote>
-<p>[参考]<a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a></p>
+<p><a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">参考</a></p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>使用hexo d -g即可把本地的博客传到GitHub上<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure></p>
@@ -453,8 +454,6 @@
             <a href="/tags/hexo/" rel="tag"># hexo</a>
           
             <a href="/tags/github/" rel="tag"># github</a>
-          
-            <a href="/tags/先写十篇开个头/" rel="tag"># 先写十篇开个头</a>
           
         </div>
       
@@ -564,7 +563,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -575,7 +574,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -586,7 +585,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
