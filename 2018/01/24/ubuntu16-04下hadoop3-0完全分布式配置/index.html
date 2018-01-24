@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="ER图,Visio,数据库设计," />
+  <meta name="keywords" content="hadoop安装," />
 
 
 
@@ -79,22 +79,20 @@
 
 
 
-<meta name="description" content="E-R图E-R图全称实体-联系图(Entity RelationshipDiagram)，提供了表示实体类型、属性和联系的方法，用来描述现实世界的概念模型。  百度百科  在建立复杂的数据库前，我们一般需要先建立一个模型以直观的展示自己的数据库设计来方便整理思路并能通过模型较为方便地分析自己的数据库是否合理。 使用Vi">
-<meta name="keywords" content="ER图,Visio,数据库设计">
+<meta name="description" content="步骤1.准备三台ubuntu机器(64位)(虚拟机)在相应的/etc/hostname修改hostname分别为master,slave1,slave22.修改每一个机器的/etc/hosts，增加三台机器的hostname和对应ip 3.使master可以ssh两台slave不需要密码在三台机器中执行  1234su">
+<meta name="keywords" content="hadoop安装">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Visio制作ER图学习笔记">
-<meta property="og:url" content="http://yoursite.com/2017/11/29/Visio制作ER图/index.html">
+<meta property="og:title" content="ubuntu16.04下hadoop3.0完全分布式配置">
+<meta property="og:url" content="http://yoursite.com/2018/01/24/ubuntu16-04下hadoop3-0完全分布式配置/index.html">
 <meta property="og:site_name" content="魏崇雍的主页">
-<meta property="og:description" content="E-R图E-R图全称实体-联系图(Entity RelationshipDiagram)，提供了表示实体类型、属性和联系的方法，用来描述现实世界的概念模型。  百度百科  在建立复杂的数据库前，我们一般需要先建立一个模型以直观的展示自己的数据库设计来方便整理思路并能通过模型较为方便地分析自己的数据库是否合理。 使用Visio使用Visio2010来建立E-R图 选择软件和数据库,选择创建数据库模型">
+<meta property="og:description" content="步骤1.准备三台ubuntu机器(64位)(虚拟机)在相应的/etc/hostname修改hostname分别为master,slave1,slave22.修改每一个机器的/etc/hosts，增加三台机器的hostname和对应ip 3.使master可以ssh两台slave不需要密码在三台机器中执行  1234sudo apt-get install sshsudo apt-get insta">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2017/11/29/Visio制作ER图/拖动.png">
-<meta property="og:image" content="http://yoursite.com/2017/11/29/Visio制作ER图/表名.png">
-<meta property="og:image" content="http://yoursite.com/2017/11/29/Visio制作ER图/关系.png">
-<meta property="og:updated_time" content="2018-01-24T09:34:00.834Z">
+<meta property="og:image" content="http://yoursite.com/2018/01/24/ubuntu16-04下hadoop3-0完全分布式配置/hosts.png">
+<meta property="og:updated_time" content="2018-01-24T11:37:32.421Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Visio制作ER图学习笔记">
-<meta name="twitter:description" content="E-R图E-R图全称实体-联系图(Entity RelationshipDiagram)，提供了表示实体类型、属性和联系的方法，用来描述现实世界的概念模型。  百度百科  在建立复杂的数据库前，我们一般需要先建立一个模型以直观的展示自己的数据库设计来方便整理思路并能通过模型较为方便地分析自己的数据库是否合理。 使用Visio使用Visio2010来建立E-R图 选择软件和数据库,选择创建数据库模型">
-<meta name="twitter:image" content="http://yoursite.com/2017/11/29/Visio制作ER图/拖动.png">
+<meta name="twitter:title" content="ubuntu16.04下hadoop3.0完全分布式配置">
+<meta name="twitter:description" content="步骤1.准备三台ubuntu机器(64位)(虚拟机)在相应的/etc/hostname修改hostname分别为master,slave1,slave22.修改每一个机器的/etc/hosts，增加三台机器的hostname和对应ip 3.使master可以ssh两台slave不需要密码在三台机器中执行  1234sudo apt-get install sshsudo apt-get insta">
+<meta name="twitter:image" content="http://yoursite.com/2018/01/24/ubuntu16-04下hadoop3-0完全分布式配置/hosts.png">
 
 
 
@@ -124,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/11/29/Visio制作ER图/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/01/24/ubuntu16-04下hadoop3-0完全分布式配置/"/>
 
 
 
 
 
-  <title>Visio制作ER图学习笔记 | 魏崇雍的主页</title>
+  <title>ubuntu16.04下hadoop3.0完全分布式配置 | 魏崇雍的主页</title>
   
 
 
@@ -291,7 +289,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/29/Visio制作ER图/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/24/ubuntu16-04下hadoop3-0完全分布式配置/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wei">
@@ -308,7 +306,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Visio制作ER图学习笔记</h1>
+          <h1 class="post-title" itemprop="name headline">ubuntu16.04下hadoop3.0完全分布式配置</h1>
         
 
         <div class="post-meta">
@@ -320,8 +318,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-29T23:20:48+08:00">
-                2017-11-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-24T17:31:35+08:00">
+                2018-01-24
               </time>
             
 
@@ -331,6 +329,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hadoop学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">hadoop学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -339,9 +359,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/11/29/Visio制作ER图/#comments" itemprop="discussionUrl">
+                <a href="/2018/01/24/ubuntu16-04下hadoop3-0完全分布式配置/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/11/29/Visio制作ER图/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/01/24/ubuntu16-04下hadoop3-0完全分布式配置/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -374,25 +394,43 @@
       
 
       
-        <h1 id="E-R图"><a href="#E-R图" class="headerlink" title="E-R图"></a>E-R图</h1><p>E-R图全称实体-联系图(Entity RelationshipDiagram)，提供了表示实体类型、属性和联系的方法，用来描述现实世界的概念模型。</p>
-<blockquote>
-<p><a href="https://baike.baidu.com/item/E-R%E5%9B%BE/304954?fr=aladdin&amp;fromid=2908042&amp;fromtitle=ER%E5%9B%BE" target="_blank" rel="noopener">百度百科</a></p>
-</blockquote>
-<p>在建立复杂的数据库前，我们一般需要先建立一个模型以直观的展示自己的数据库设计来方便整理思路并能通过模型较为方便地分析自己的数据库是否合理。</p>
-<h1 id="使用Visio"><a href="#使用Visio" class="headerlink" title="使用Visio"></a>使用Visio</h1><p>使用Visio2010来建立E-R图</p>
-<p>选择<strong>软件和数据库</strong>,选择创建<strong>数据库模型图</strong></p>
-<p>拖动实体到绘图页面</p>
-<p><img src="/2017/11/29/Visio制作ER图/拖动.png" alt="logo"></p>
-<p>选择拖动到绘图页面的实体框在坐下角选择定义，输入表名</p>
-<p><img src="/2017/11/29/Visio制作ER图/表名.png" alt="logo"></p>
-<p>输入表明后后点击列输入列名与列的数据类型选择是否必要是否为PK；</p>
-<p>通过同样方法建其它表通过关系来创建表之间的关系<br><img src="/2017/11/29/Visio制作ER图/关系.png" alt="logo"></p>
-<p>:</p>
-<p>:</p>
-<p>Ps:关于可移植数据类型和物理数据类型之间的选择以及驱动程序选项</p>
-<blockquote>
-<p><a href="https://support.office.com/zh-cn/article/%E5%9C%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A8%A1%E5%9E%8B%E5%9B%BE%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%92%8C%E7%BC%96%E8%BE%91%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-0edff5ec-cd85-4211-bd0c-c8fceea16de2" target="_blank" rel="noopener">在数据库模型图中设置和编辑数据类型</a></p>
-</blockquote>
+        <h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h2 id="1-准备三台ubuntu机器-64位-虚拟机-在相应的-etc-hostname修改hostname分别为master-slave1-slave2"><a href="#1-准备三台ubuntu机器-64位-虚拟机-在相应的-etc-hostname修改hostname分别为master-slave1-slave2" class="headerlink" title="1.准备三台ubuntu机器(64位)(虚拟机)在相应的/etc/hostname修改hostname分别为master,slave1,slave2"></a>1.准备三台ubuntu机器(64位)(虚拟机)在相应的/etc/hostname修改hostname分别为master,slave1,slave2</h2><h2 id="2-修改每一个机器的-etc-hosts，增加三台机器的hostname和对应ip"><a href="#2-修改每一个机器的-etc-hosts，增加三台机器的hostname和对应ip" class="headerlink" title="2.修改每一个机器的/etc/hosts，增加三台机器的hostname和对应ip"></a>2.修改每一个机器的/etc/hosts，增加三台机器的hostname和对应ip</h2><p><img src="/2018/01/24/ubuntu16-04下hadoop3-0完全分布式配置/hosts.png" alt="logo"></p>
+<h2 id="3-使master可以ssh两台slave不需要密码"><a href="#3-使master可以ssh两台slave不需要密码" class="headerlink" title="3.使master可以ssh两台slave不需要密码"></a>3.使master可以ssh两台slave不需要密码</h2><pre><code>在三台机器中执行
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ssh</span><br><span class="line">sudo apt-get install openssh-server //没有它ssh时可能被拒绝</span><br><span class="line">sudo apt-get install rsync</span><br><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+
+执行完成后在master中执行
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id -i ~/.ssh/id_rsa.pub master</span><br><span class="line">ssh-copy-id -i ~/.ssh/id_rsa.pub slave1</span><br><span class="line">ssh-copy-id -i ~/.ssh/id_rsa.pub slave2</span><br></pre></td></tr></table></figure>
+</code></pre><p>若在master中ssh slave1,ssh slave2时不需要输入密码，该步配置成功</p>
+<h2 id="4-jdk和配置hadoop"><a href="#4-jdk和配置hadoop" class="headerlink" title="4.jdk和配置hadoop"></a>4.jdk和配置hadoop</h2><h3 id="jdk"><a href="#jdk" class="headerlink" title="jdk"></a>jdk</h3><pre><code>jdk选择jdk8不选择jdk9，若选择jdk9,resourcemanager由于jdk9禁用访问许多javax. * api会启动失败
+</code></pre><p><a href="http://blog.csdn.net/ChlatZed/article/details/78858100" target="_blank" rel="noopener">参考</a></p>
+<h3 id="hadoop配置"><a href="#hadoop配置" class="headerlink" title="hadoop配置"></a>hadoop配置</h3><pre><code>在hadoop-3.0.0中创建目录tmp和hdfs,在hdfs中创建目录name和data
+</code></pre><h4 id="hadoop-env-sh"><a href="#hadoop-env-sh" class="headerlink" title="hadoop-env.sh"></a>hadoop-env.sh</h4><pre><code>在hadoop-env.sh中加入
+</code></pre><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/xxx/jdk1.8.0_162</span><br><span class="line"><span class="built_in">export</span> HADOOP_HOME=/xxx/hadoop-3.0.0</span><br><span class="line"><span class="built_in">export</span> HADOOP_COMMON_LIB_NATIVE_DIR=/xxx/hadoop-3.0.0/lib/native //即<span class="variable">$HADOOP_HOME</span>/lib/native</span><br><span class="line"><span class="built_in">export</span> HADOOP_OPTS=<span class="string">"-Djava.library.path=/xxx/hadoop-3.0.0/lib:/opt/hadoop-3.0.0/lib/native"</span></span><br></pre></td></tr></table></figure>
+<h4 id="hdfs-site-xml"><a href="#hdfs-site-xml" class="headerlink" title="hdfs-site.xml"></a>hdfs-site.xml</h4><pre><code>在configuration中添加
+</code></pre><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>dfs.namenode.secondary.http-address<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">value</span>&gt;</span>master:9001<span class="tag">&lt;/<span class="name">value</span>&gt;</span><span class="comment">&lt;!--配置namenode失败后做namenode的机器--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>dfs.replication<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">value</span>&gt;</span>2<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>dfs.namenode.name.dir<span class="tag">&lt;/<span class="name">name</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">value</span>&gt;</span>/opt/hadoop-3.0.0/hdfs/name<span class="tag">&lt;/<span class="name">value</span>&gt;</span><span class="comment">&lt;!--刚刚创建的name的路径--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>dfs.datanode.data.dir<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">value</span>&gt;</span>/opt/hadoop-3.0.0/hdfs/data<span class="tag">&lt;/<span class="name">value</span>&gt;</span><span class="comment">&lt;!--创建的data的路径--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>dfs.tmp.dir<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">value</span>&gt;</span>/opt/hadoop-3.0.0/tmp<span class="tag">&lt;/<span class="name">value</span>&gt;</span><span class="comment">&lt;!--tmp的路径--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="yarn-site-xml"><a href="#yarn-site-xml" class="headerlink" title="yarn-site.xml"></a>yarn-site.xml</h4><pre><code>在configuration中添加
+</code></pre><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>yarn.resourcemanager.hostname<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">value</span>&gt;</span>master<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>yarn.nodemanager.aux-services<span class="tag">&lt;/<span class="name">name</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">value</span>&gt;</span>mapreduce_shuffle<span class="tag">&lt;/<span class="name">value</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="mapred-site-xml"><a href="#mapred-site-xml" class="headerlink" title="mapred-site.xml"></a>mapred-site.xml</h4><pre><code>在configuration中添加
+</code></pre><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>mapreduce.framework.name<span class="tag">&lt;/<span class="name">name</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">value</span>&gt;</span>yarn<span class="tag">&lt;/<span class="name">value</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>mapreduce.admin.user.env<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">value</span>&gt;</span>HADOOP_MAPRED_HOME=/opt/hadoop-3.0.0<span class="tag">&lt;/<span class="name">value</span>&gt;</span><span class="comment">&lt;!--hadoop的路径--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>yarn.app.mapreduce.am.env<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">value</span>&gt;</span>HADOOP_MAPRED_HOME=/opt/hadoop-3.0.0<span class="tag">&lt;/<span class="name">value</span>&gt;</span><span class="comment">&lt;!--hadoop的路径--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="更换native"><a href="#更换native" class="headerlink" title="更换native"></a>更换native</h4><p><a href="http://www.chinahadoop.cn/classroom/5/thread/43" target="_blank" rel="noopener">参考</a></p>
+<pre><code>下载hadoop-native-64.tar替换hadoop-3.0.0/lib/native彻底消除警告
+</code></pre><p><a href="http://dl.bintray.com/sequenceiq/sequenceiq-bin/" target="_blank" rel="noopener">下载地址</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform… using builtin-java classes where applicable</span><br></pre></td></tr></table></figure>
+<h2 id="5-启动和关闭"><a href="#5-启动和关闭" class="headerlink" title="5.启动和关闭"></a>5.启动和关闭</h2><h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><pre><code>把lib目录 sbin目录 bin目录配进环境变量
+
+第一次启动先执行
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hdf namenode -format</span><br></pre></td></tr></table></figure>
+<pre><code>每次开启执行
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">start-dfs.sh</span><br><span class="line">start-yarn.sh</span><br></pre></td></tr></table></figure>
+<pre><code>使用jps可查看运行了那些进程，若master运行了namenode和resourcemanager;slave运行来datanode和nodemanager;secondarynamenode指定打机器运行来secondarynamenode则成功。
+
+此时http://master:8080和http://master:9870可访问
+</code></pre><h3 id="关闭"><a href="#关闭" class="headerlink" title="关闭"></a>关闭</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">stop-dfs.sh</span><br><span class="line">start-yarn.sh</span><br><span class="line">或者</span><br><span class="line">stop-all.sh</span><br></pre></td></tr></table></figure>
+<h1 id="其它参考"><a href="#其它参考" class="headerlink" title="其它参考"></a>其它参考</h1><p><a href="https://www.cnblogs.com/chengxin1982/p/4023098.html" target="_blank" rel="noopener">yarn默认配置</a></p>
+<p><a href="http://blog.csdn.net/dream_an/article/details/52946840" target="_blank" rel="noopener">超详细从零记录Hadoop2.7.3完全分布式集群部署过程</a></p>
+<p><a href="https://www.jianshu.com/p/1d99be0d2544" target="_blank" rel="noopener">大数据学习（Hadoop3.0安装与样例测试）</a></p>
 
       
     </div>
@@ -410,11 +448,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/ER图/" rel="tag"># ER图</a>
-          
-            <a href="/tags/Visio/" rel="tag"># Visio</a>
-          
-            <a href="/tags/数据库设计/" rel="tag"># 数据库设计</a>
+            <a href="/tags/hadoop安装/" rel="tag"># hadoop安装</a>
           
         </div>
       
@@ -427,8 +461,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/29/GitHub-Hexo搭建博客/" rel="next" title="Linux下GitHub Pages+Hexo搭建博客">
-                <i class="fa fa-chevron-left"></i> Linux下GitHub Pages+Hexo搭建博客
+              <a href="/2017/12/23/java-分别基于TCP和UDP的Socket/" rel="next" title="Java 分别基于TCP和UDP的Socketd的简单实现">
+                <i class="fa fa-chevron-left"></i> Java 分别基于TCP和UDP的Socketd的简单实现
               </a>
             
           </div>
@@ -436,10 +470,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/12/02/request-getRequestDispatcher-forward-后代码继续执行/" rel="prev" title="request.getRequestDispatcher().forward(,)后代码继续执行">
-                request.getRequestDispatcher().forward(,)后代码继续执行 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -593,7 +623,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#E-R图"><span class="nav-number">1.</span> <span class="nav-text">E-R图</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用Visio"><span class="nav-number">2.</span> <span class="nav-text">使用Visio</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#步骤"><span class="nav-number">1.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-准备三台ubuntu机器-64位-虚拟机-在相应的-etc-hostname修改hostname分别为master-slave1-slave2"><span class="nav-number">1.1.</span> <span class="nav-text">1.准备三台ubuntu机器(64位)(虚拟机)在相应的/etc/hostname修改hostname分别为master,slave1,slave2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-修改每一个机器的-etc-hosts，增加三台机器的hostname和对应ip"><span class="nav-number">1.2.</span> <span class="nav-text">2.修改每一个机器的/etc/hosts，增加三台机器的hostname和对应ip</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-使master可以ssh两台slave不需要密码"><span class="nav-number">1.3.</span> <span class="nav-text">3.使master可以ssh两台slave不需要密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-jdk和配置hadoop"><span class="nav-number">1.4.</span> <span class="nav-text">4.jdk和配置hadoop</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#jdk"><span class="nav-number">1.4.1.</span> <span class="nav-text">jdk</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hadoop配置"><span class="nav-number">1.4.2.</span> <span class="nav-text">hadoop配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#hadoop-env-sh"><span class="nav-number">1.4.2.1.</span> <span class="nav-text">hadoop-env.sh</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hdfs-site-xml"><span class="nav-number">1.4.2.2.</span> <span class="nav-text">hdfs-site.xml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#yarn-site-xml"><span class="nav-number">1.4.2.3.</span> <span class="nav-text">yarn-site.xml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mapred-site-xml"><span class="nav-number">1.4.2.4.</span> <span class="nav-text">mapred-site.xml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更换native"><span class="nav-number">1.4.2.5.</span> <span class="nav-text">更换native</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-启动和关闭"><span class="nav-number">1.5.</span> <span class="nav-text">5.启动和关闭</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#启动"><span class="nav-number">1.5.1.</span> <span class="nav-text">启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关闭"><span class="nav-number">1.5.2.</span> <span class="nav-text">关闭</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其它参考"><span class="nav-number">2.</span> <span class="nav-text">其它参考</span></a></li></ol></div>
             
 
           </div>
@@ -783,9 +813,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/11/29/Visio制作ER图/';
-          this.page.identifier = '2017/11/29/Visio制作ER图/';
-          this.page.title = 'Visio制作ER图学习笔记';
+          this.page.url = 'http://yoursite.com/2018/01/24/ubuntu16-04下hadoop3-0完全分布式配置/';
+          this.page.identifier = '2018/01/24/ubuntu16-04下hadoop3-0完全分布式配置/';
+          this.page.title = 'ubuntu16.04下hadoop3.0完全分布式配置';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://weibobo.disqus.com/embed.js';
