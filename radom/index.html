@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Select</title>
+</head>
+<script type="text/javascript" src="./jquery/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<script type="text/javascript" src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./swiper-4.4.2/dist/css/swiper.min.css">
+<script type="text/javascript" src="./swiper-4.4.2/dist/js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/main.css">
+<script type="text/javascript" src="./js/main.js"></script>
+
+<body>
+    <div class="container">
+
+    </div>
+    <div class="realBody">
+        <div class="swiper-container" style="height:80%;width:100%;margin-top: 12.5%">
+            <div class="swiper-wrapper" style="height:100%;width:100%">
+                <div class="swiper-slide aslide">
+                    <table align='center' style='height:80%;'>
+                        <tr style="height:20%">
+                        </tr>
+                        <tr>
+                            <td align="center" class="select" onclick="justChoose()">JUST CHOOSE!</td>
+                        </tr>
+                        <tr>
+                            <td align='center'>
+                                <textarea name="" id="" cols="25" rows="10" class='text'></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="swiper-slide aslide">
+                    <table align='center' style='height:80%;'>
+                        <tr style="height:20%">
+                        </tr>
+                        <tr>
+                            <td align="center" class="select" onclick="justChoose()">JUST CHOOSE!</td>
+                        </tr>
+                        <tr>
+                            <td align='center'>
+                                <textarea name="" id="" cols="25" rows="10" class='text'></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <script>
+        var cc = 0;
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            on: {
+                slideChange: function () {
+                    if (mySwiper.slides.length == mySwiper.activeIndex + 1 && cc == 0)
+                        newSwiper();
+                }
+            }
+        })
+    </script>
+    <script>
+        function justChoose() {
+            if (mySwiper.slides.length > 2) {
+                cc = 1;
+                mySwiper.slideTo(mySwiper.slides.length - 1);
+                mySwiper.addSlide(mySwiper.slides.length, "<div class=\"swiper-slide aslide\">" +
+                    "<table align='center' style='height:80%;'>" +
+                    "<tr style=\"height:30%\">" +
+                    "</tr>" +
+                    "<tr>" +
+                    "<td align=\"center\" class=\"select\" onclick=\"realChoose()\">GO!GO!GO!</td>" +
+                    "</tr>" +
+                    "<tr>" +
+                    "<td align=\"center\" class=\"select\" style=\"font-size:350%\" onclick=\"back()\">Back</td>" +
+                    "</tr>" +
+                    "<tr>" +
+                    "<td align=\"center\" class=\"select\">   </td>" +
+                    "</tr>" +
+                    "</table>" +
+                    "</div>");
+                mySwiper.update()
+                mySwiper.removeSlide(mySwiper.slides.length - 2);
+            }
+        }
+        function back() {
+            mySwiper.slideTo(0);
+            mySwiper.appendSlide("<div class=\"swiper-slide aslide\">" +
+                "<table align='center' style='height:80%;'>" +
+                "<tr style=\"height:20%\">" +
+                "</tr>" +
+                "<tr>" +
+                "<td align=\"center\" class=\"select\" onclick=\"justChoose()\">JUST CHOOSE!</td>" +
+                "</tr>" +
+                "<tr>" +
+                "<td align='center'>" +
+                "<textarea name='' id='' cols='25' rows='10' class='text'></textarea>" +
+                "</td>" +
+                "</tr>" +
+                "</table>" +
+                "</div>");
+            mySwiper.update()
+            mySwiper.removeSlide(mySwiper.slides.length - 2);
+            cc = 0;
+        }
+    </script>
+    <script>
+        $("body").on("touchstart", function (e) {
+            e.preventDefault();
+            startX = e.originalEvent.changedTouches[0].pageX,
+                startY = e.originalEvent.changedTouches[0].pageY;
+        });
+        $("body").on("touchmove", function (e) {
+            e.preventDefault();
+            moveEndX = e.originalEvent.changedTouches[0].pageX,
+                moveEndY = e.originalEvent.changedTouches[0].pageY,
+                X = moveEndX - startX,
+                Y = moveEndY - startY;
+
+            if (Math.abs(Y) > Math.abs(X) && Y < -200) {
+                if (mySwiper.slides.length > 2&&mySwiper.activeIndex!=(mySwiper.slides.length-1)) {
+                    mySwiper.removeSlide(mySwiper.activeIndex)
+                    mySwiper.slideTo(mySwiper.activeIndex - 1);
+                }
+            }
+        });</script>
+</body>
+
+</html>

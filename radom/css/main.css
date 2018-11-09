@@ -1,0 +1,37 @@
+body{
+    width: 100vw;
+    height: 80vh;
+}
+.container{
+    width: 100%;
+	height: 100%;
+    background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542351609&di=fb9b3d66813dbc25071f31f03dc7a5cd&imgtype=jpg&er=1&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201601%2F27%2F20160127081850_VrQy4.jpeg');
+	background-size: cover;
+	position: absolute;
+	filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(10px);
+    
+}
+.realBody {
+	background: rgba(114, 113, 113, 0.185);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.aslide{
+	width: 85%;
+	height: 85%;
+}
+.text{
+	background: rgba(194, 194, 194, 0.404);
+	border: 0px;
+	font-size: 250%;
+}
+.select{
+	color: rgb(214, 117, 117);
+	font-size: 550%;
+}
